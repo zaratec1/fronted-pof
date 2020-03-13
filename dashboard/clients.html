@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Clientes</title>
 
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
+
     <!-- Fonts -->
     <link href="../assets/fontawesome/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -17,8 +17,8 @@
 
 </head>
 <body>
-
-    <!-- START DASHBOARD -->
+    
+    <!-- START CLIENTS DASHBOARD -->
 
       <!-- Page Wrapper -->
   <div id="wrapper">
@@ -38,7 +38,7 @@
       <hr class="sidebar-divider my-0">
 
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
@@ -93,12 +93,12 @@
       </div>
 
       <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
           <i class="fas fa-fw fa-folder"></i>
           <span>Pages</span>
         </a>
-        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+        <div id="collapsePages" class="collapse show" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Login Screens:</h6>
             <a class="collapse-item" href="login.html">Login</a>
@@ -107,7 +107,7 @@
             <div class="collapse-divider"></div>
             <h6 class="collapse-header">Other Pages:</h6>
             <a class="collapse-item" href="404.html">404 Page</a>
-            <a class="collapse-item" href="blank.html">Blank Page</a>
+            <a class="collapse-item active" href="blank.html">Blank Page</a>
           </div>
         </div>
       </li>
@@ -150,6 +150,18 @@
           <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
             <i class="fa fa-bars"></i>
           </button>
+
+          <!-- Topbar Search -->
+          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+            <div class="input-group">
+              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="button">
+                  <i class="fas fa-search fa-sm"></i>
+                </button>
+              </div>
+            </div>
+          </form>
 
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
@@ -318,103 +330,8 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Ventas</h1>
-            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
-          </div>
+          <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
 
-
-          <!-- BEGIN TABLE -->
-          <div class="card shadow mb-4">
-              <div class="card-header py-3">
-                <h6 class="m-0 font-weight-bold text-primary">Facturas de hoy</h6>
-              </div>
-              <div class="card-body">
-                <div class="table-responsive">
-                  <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                    <thead>
-                      <tr>
-                        <th>Entrega</th>
-                        <th>Tipo</th>
-                        <th>Número</th>
-                        <th>Fecha</th>
-                        <th>Hora</th>
-                        <th>Elementos</th>
-                        <th>Cliente</th>
-                        <th>Total Final</th>
-                        <th>Observaciones</th>
-                        <th>Sucursal</th>
-                        <th>Punto de Emisión</th>
-                        <th>Estado</th>
-                        <th>Usuario</th>
-                        <th>Accciones</th>
-                      </tr>
-                    </thead>
-                    <tfoot>
-                      <tr>
-                        <th>Entrega</th>
-                        <th>Tipo</th>
-                        <th>Número</th>
-                        <th>Fecha</th>
-                        <th>Hora</th>
-                        <th>Elementos</th>
-                        <th>Cliente</th>
-                        <th>Total Final</th>
-                        <th>Observaciones</th>
-                        <th>Sucursal</th>
-                        <th>Punto de Emisión</th>
-                        <th>Estado</th>
-                        <th>Usuario</th>
-                        <th>Acciones</th>
-                      </tr>
-                    </tfoot>
-                    <tbody>
-                      <tr>
-                          <td>NA</td>
-                          <td>NA</td>
-                          <td>10</td>
-                          <td>23/03/20</td>
-                          <td>13:30</td>
-                          <td>1 Disco Duro <br> 3 Memoria RAM </td>
-                          <td>José</td>
-                          <td>$400</td>
-                          <td>NA</td>
-                          <td>México</td>
-                          <td>NA</td>
-                          <td>CDMX</td>
-                          <td>Alvarez</td>
-                          <td>
-                            <div class="my-2"></div>
-                            <a href="#" class="btn btn-success btn-icon-split">
-                              <span class="icon text-white-50">
-                                <i class="fas fa-check"></i>
-                              </span>
-                              <span class="text">Cobrar</span>
-                            </a>
-             
-                            <div class="my-2"></div>
-                            <a href="#" class="btn btn-warning btn-icon-split">
-                              <span class="icon text-white-50">
-                                <i class="fas fa-exclamation-triangle"></i>
-                              </span>
-                              <span class="text">Anular</span>
-                            </a>
-                            <div class="my-2"></div>
-                            <a href="#" class="btn btn-danger btn-icon-split">
-                              <span class="icon text-white-50">
-                                <i class="fas fa-trash"></i>
-                              </span>
-                              <span class="text">Retención</span>
-                            </a>
-                          </td>
-                        </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-          </div>
-          <!-- END TABLE -->
-  
         </div>
         <!-- /.container-fluid -->
 
@@ -425,7 +342,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>&copy; AcontPlus 2020</span>
+            <span>Copyright &copy; Your Website 2019</span>
           </div>
         </div>
       </footer>
@@ -461,9 +378,9 @@
     </div>
   </div>
 
-    <!-- END DASHBOARD -->
-    
+    <!-- END CLIENTS DASHBOARD -->
 
+    
     <!-- BOOTSTRAP SCRIPTS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -474,8 +391,6 @@
 
     <!-- SCRIPT FOR DASHBOARD -->
     <script src="../assets/scripts/script.js"></script>
-    
-
 
 </body>
 </html>
