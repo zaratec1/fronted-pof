@@ -114,17 +114,8 @@
             <i class="fa fa-bars"></i>
           </button>
 
-          <!-- Topbar Search -->
-          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-            <div class="input-group">
-              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
-                  <i class="fas fa-search fa-sm"></i>
-                </button>
-              </div>
-            </div>
-          </form>
+          <!-- Page Heading -->
+          <h1 class="h3 mb-0 text-gray-800">Cuentas por cobrar</h1>
 
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
@@ -292,14 +283,72 @@
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
-          <!-- Page Heading -->
-          <h1 class="h3 mb-4 text-gray-800">Cuentas por cobrar</h1>
+
 
                       <!-- BEGIN TABLE -->
           <div class="card shadow mb-4">
+
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Listado de Cuentas</h6>
+
+              <div class="container">
+
+                <div class="row">
+                  <div class="col col-lg-3">
+                    <a href="#" data-toggle="modal" data-target="#fechaModal">
+                      <h5 class="m-0 font-weight-bold text-primary">Facturas de hoy</h5>
+                    </a>
+                    <h5>Filtro: Ninguno</h5>
+                  </div>
+                  <div class="col col-lg-3">
+                    <!-- Nav Item - Tables -->
+                    <h5 class="m-0 font-weight-bold text-primary" >
+                      <a  href="#" data-toggle="modal" data-target="#searchModal">
+                        <i class="fab fa-searchengin"></i>
+                        <span></span>Busqueda Avanzada</span></a>
+                    </h5>
+                  </div>
+                  <div class="col col-lg-3">
+
+                      <div class="form-row">
+
+                        <div class="col">
+                          
+                          <h5 class="m-0 font-weight-bold text-primary">
+                            <label for="exampleFormControlSelect1">Sucursal</label>
+                          </h5>
+                          <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Matriz</option>
+                          </select>
+
+                        </div>
+                      </div>
+
+                  </div>
+                  <div class="col col-lg-3">
+                    
+                    <div class="form-row">
+
+                      <div class="col">
+                        
+                        <h5 class="m-0 font-weight-bold text-primary">
+                          <label for="exampleFormControlSelect1">Punto Emi</label>
+                        </h5>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>001-001</option>
+                        </select>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+              
+              
+              
             </div>
+
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -308,7 +357,6 @@
                       <th>ID</th>
                       <th>Productos</th>
                       <th>Total</th>
-                      <th>Actions</th>
                     </tr>
                 </thead>
                 <tfoot>
@@ -316,7 +364,6 @@
                       <th>ID</th>
                       <th>Productos</th>
                       <th>Total</th>
-                      <th>Actions</th>
                     </tr>
                   </tfoot>
                   <tbody>
@@ -324,45 +371,13 @@
                         <td>0</td>
                         <td>1 Disco <br> 3 Memorias</td>
                         <td>$450.00</td>
-                        <td>
-                          <div class="my-2"></div>
-                          <a href="#" class="btn btn-success btn-icon-split">
-                            <span class="icon text-white-50">
-                              <i class="fas fa-check"></i>
-                            </span>
-                            <span class="text">Cobrar</span>
-                          </a>
-
-                          <div class="my-2"></div>
-                          <a href="#" class="btn btn-danger btn-icon-split">
-                            <span class="icon text-white-50">
-                              <i class="fas fa-trash"></i>
-                            </span>
-                            <span class="text">Eliminar</span>
-                          </a>
-                        </td>
+     
                     </tr>
                     <tr>
                         <td>1</td>
                         <td>4 Disco <br> 1 Ventilador</td>
                         <td>$600.00</td>
-                        <td>
-                          <div class="my-2"></div>
-                          <a href="#" class="btn btn-success btn-icon-split">
-                            <span class="icon text-white-50">
-                              <i class="fas fa-check"></i>
-                            </span>
-                            <span class="text">Cobrar</span>
-                          </a>
-
-                          <div class="my-2"></div>
-                          <a href="#" class="btn btn-danger btn-icon-split">
-                            <span class="icon text-white-50">
-                              <i class="fas fa-trash"></i>
-                            </span>
-                            <span class="text">Eliminar</span>
-                          </a>
-                        </td>
+             
                     </tr>
 
                   </tbody>
@@ -371,6 +386,52 @@
             </div>
         </div>
         <!-- END TABLE -->
+
+                  
+          <!--START BUTTONS ACTIONS-->
+          <div class="form-row">
+
+            <div class="col">
+
+            </div>
+
+
+            <div class="col col-lg-2">
+
+              <div class="my-2"></div>
+              <a href="#" class="btn btn-success btn-icon-split" data-toggle="modal" data-target="#payModal">
+                <span class="icon text-white-50">
+                  <i class="fas fa-check"></i>
+                </span>
+                <span class="text">Cobrar</span>
+              </a>
+
+            </div>
+
+            <div class="col col-lg-2">
+
+              <div class="my-2"></div>
+              <a href="#" class="btn btn-primary btn-icon-split">
+                <span class="icon text-white-50">
+                  <i class="fas fa-money-bill-alt"></i>
+                </span>
+                <span class="text">Movimiento</span>
+              </a>
+
+            </div>
+            <div class="col col-lg-2">
+
+              <div class="my-2"></div>
+              <a href="#" class="btn btn-secondary btn-icon-split">
+                <span class="icon text-white-50">
+                  <i class="fas fa-file-import"></i>
+                </span>
+                <span class="text">Recibo</span>
+              </a>
+
+            </div>
+          </div>
+          <!--END START BUTTONS ACTIONS-->
 
 
         </div>
@@ -418,6 +479,174 @@
       </div>
     </div>
   </div>
+
+  <!-- Search Modal-->
+  <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ModalLabel">Realizar Busqueda</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+    
+              <div class="row">
+                <div class="col-lg-12">
+                <div class="p-5">
+  
+                  <form>
+  
+                    <form>
+                      <div class="form-group">
+                          <label for="exampleFormControlSelect1">Cliente</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option> </option>
+                          <option>Christian</option>
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                          <label for="exampleFormControlSelect1">Vencidos</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option> </option>
+                          <option>NA</option>
+                        </select>
+                      </div>
+    
+    
+                      <div class="form-group">
+                          <label for="exampleFormControlSelect1">Estado</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option> </option>
+                          <option>Pendiente</option>
+                        </select>
+                      </div>
+    
+                      <div class="form-group">
+                          <label for="exampleFormControlSelect1">Usuarios</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option> </option>
+                          <option>Usuario 1</option>
+                        </select>
+                      </div>
+    
+    
+                    </form>
+                    
+  
+                  </form>
+    
+                </div>
+                </div>
+              </div>
+    
+              <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                <button class="btn btn-success" type="button" data-dismiss="modal">Buscar</button>
+              </div>
+            </div>
+          </div>
+  </div>
+
+  
+      <!-- Pay Modal-->
+      <div class="modal fade" id="payModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ModalLabel">Cobrar producto</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+  
+            <div class="row">
+              <div class="col-lg-12">
+              <div class="p-5">
+ 
+                <h5>Total: $500</h5>
+                <br>
+
+                <div class="form-group">
+                  <label for="metodoPago">Método de pago</label>
+                  <select class="form-control" id="metodoPago">
+                    <option>CHEQUE</option>
+                    <option>EFECTIVO</option>
+                    <option>TARJETA DÉBITO</option>
+                    <option>TARJETA CRÉDITO</option>
+                  </select>
+                </div>
+
+                <br>
+
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Número de cuenta</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Domicilio</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                  </div>
+
+                </form>
+  
+              </div>
+              </div>
+            </div>
+  
+            <div class="modal-footer">
+              <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+              <a class="btn btn-success" href="">Cobrar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <!-- FECHA MODAL -->
+  <div class="modal fade" id="fechaModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">Seleccione una fecha</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+
+        <div class="row">
+          <!-- <div class="col-lg-6 d-none d-lg-block bg-login-image"></div> -->
+          <div class="col-lg-12">
+          <div class="p-5">
+            <div class="text-center">
+            </div>
+            <form class="user">
+            <div class="form-group">
+              <label for="">Fecha inicial</label>
+              <input type="date" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+              <label for="">Fecha final</label>
+              <input type="date" class="form-control form-control-user" id="exampleInputPassword" >
+            </div>
+
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary" type="button" data-dismiss="modal">Aplicar</button>
+            </div>
+
+            </form>
+
+            <hr>
+          </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
     <!-- END CHARGE DASHBOARD -->
     
 
