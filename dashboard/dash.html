@@ -121,6 +121,9 @@
         <!-- Topbar -->
         <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
+            <!-- Page Heading -->
+            <h1 class="h3 mb-0 text-gray-800">Ventas</h1>
+
           <!-- Sidebar Toggle (Topbar) -->
           <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
             <i class="fa fa-bars"></i>
@@ -128,6 +131,7 @@
 
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
+            
 
             <!-- Nav Item - Search Dropdown (Visible Only XS) -->
             <li class="nav-item dropdown no-arrow d-sm-none">
@@ -292,13 +296,6 @@
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
-          <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Ventas</h1>
-            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
-          </div>
-
-
           <!-- BEGIN TABLE -->
           <div class="card shadow mb-4">
               <div class="card-header py-3">
@@ -310,6 +307,7 @@
                       <a href="#" data-toggle="modal" data-target="#fechaModal">
                         <h5 class="m-0 font-weight-bold text-primary">Facturas de hoy</h5>
                       </a>
+                      <h5>Filtro: Ninguno</h5>
                     </div>
                     <div class="col col-lg-3">
                       <!-- Nav Item - Tables -->
@@ -667,11 +665,12 @@
                       </select>
                     </div>
   
+                    <!-- RANGO DE NUMERO -->
                     <div class="form-group">
                         <label for="exampleFormControlSelect1">Numero de Documento</label>
                       <select class="form-control" id="exampleFormControlSelect1">
                         <option> </option>
-                        <option>01</option>
+                        <option>1 - 1000</option>
                       </select>
                     </div>
   

@@ -107,23 +107,16 @@
 
         <!-- Topbar -->
         <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+        
+          <!-- Page Heading -->
+          <h1 class="h3 mb-0 text-gray-800">Clientes</h1>
 
           <!-- Sidebar Toggle (Topbar) -->
           <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
             <i class="fa fa-bars"></i>
           </button>
 
-          <!-- Topbar Search -->
-          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-            <div class="input-group">
-              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
-                  <i class="fas fa-search fa-sm"></i>
-                </button>
-              </div>
-            </div>
-          </form>
+
 
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
@@ -291,8 +284,6 @@
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
-          <!-- Page Heading -->
-          <h1 class="h3 mb-4 text-gray-800">Clientes</h1>
 
                       <!-- BEGIN TABLE -->
           <div class="card shadow mb-4">
@@ -482,7 +473,7 @@
         
                   <div class="form-group">
                     <div class="form-group">
-                      <label for="">Descripcion</label>
+                      <label for="">Codigo</label>
                       <input type="text" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Descripcion">
                     </div>
     
@@ -492,43 +483,59 @@
         
                   <div class="form-group row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
-                      <label for="">Codigo de barras</label>
-                    <input type="text" class="form-control form-control-user" id="codEx" placeholder="Código de barras">
+                        <label for="exampleFormControlSelect1">Tipo de Identificacion</label>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>CEDULA</option>
+                        <option>RUC</option>
+                        <option>PASAPORTE</option>
+                      </select>
                     </div>
-                    <div class="col-sm-6">
-                      <label for="">Stock Actual</label>
-                    <input type="text" class="form-control form-control-user" id="stock" placeholder="Stock Actual">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                        <label for="exampleFormControlSelect1">Numero de Identificacion</label>
+                      <input type="text"  class="form-control form-control-user" name="" id="" placeholder="Numero de identificacion">
                     </div>
+
                   </div>
     
                   <div class="form-group row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
-                      <label for="">Stock Reservado</label>
-                    <input type="text" class="form-control form-control-user" id="stockRes" placeholder="Stock Reservado">
+                      <label for="exampleFormControlSelect1">Tipo de Contribuyente</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>PERSONA NATURAL</option>
+                      <option>OBLIGADO A LLEVAR CONTABILIDAD</option>
+                      <option>CONTRIBUYENTE ESPECIAL</option>
+                    </select>
                     </div>
-                    <div class="col-sm-6">
-                      <label for="">Stock Disponible</label>
-                    <input type="text" class="form-control form-control-user" id="stockDis" placeholder="Stock Disponible">
-                    </div>
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                      <label for="exampleFormControlSelect1">Direccion</label>
+                    <input type="text"  class="form-control form-control-user" name="" id="" placeholder="Numero de identificacion">
+                  </div>
                   </div>
     
                   <div class="form-group row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
-                      <label for="">PVP1</label>
-                    <input type="text" class="form-control form-control-user" id="precio" placeholder="PVP1">
+                      <label for="">Telefono</label>
+                    <input type="text" class="form-control form-control-user" id="precio" placeholder="Telefono">
                     </div>
                     <div class="col-sm-6">
-                      <label for="">Familia</label>
-                    <input type="text" class="form-control form-control-user" id="categoria" placeholder="Familia">
+                      <label for="">Email</label>
+                    <input type="email" class="form-control form-control-user" id="categoria" placeholder="Email">
                     </div>
                   </div>
     
                   <div class="form-group row">
     
-                    <div class="col-sm-6">
-                      <label for="">Codigo</label>
-                    <input type="text" class="form-control form-control-user" id="codigo" placeholder="Código">
-                    </div>
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                      <label for="exampleFormControlSelect1">Tarifa</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>PVP1</option>
+                      <option>PVP2</option>
+                      <option>PVP3</option>
+                      <option>PVP4</option>
+                      <option>PVP5</option>
+                    </select>
+                  </div>
+
                   </div>
       
                   
@@ -539,7 +546,7 @@
                 </div>
                 </div>
               </div>
-              
+
               <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
                 <a class="btn btn-success" href="">Cobrar</a>
