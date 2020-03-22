@@ -297,7 +297,34 @@
                       <!-- BEGIN TABLE -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Listado de Clientes</h6>
+              <div class="container">
+
+                <div class="row">
+
+
+                  <div class="col">
+                      <h5 class="m-0 font-weight-bold text-primary">Listado de clientes</h5>
+                  </div>
+                  <div class="col col-lg-4">
+                      <form class="form-inline">
+                        <div class="form-group">
+                          <label for="inputPassword6">Buscar</label>
+                          <input type="text" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+                        </div>
+                      </form>
+                  </div>
+                  <div class="col col-lg-3">
+                            
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Nombre Fiscal</option>
+                    </select>
+
+                  </div>
+
+                  
+                </div>
+
+              </div>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -305,37 +332,34 @@
                   <thead>
                     <tr>
                       <th>Código</th>
-                      <th>Nombre</th>
+                      <th>Ruc</th>
+                      <th>Nombre Fiscal</th>
+                      <th>Direccion</th>
+                      <th>Telefono</th>
+                      <th>Tarifa</th>
                       <th>Deuda</th>
-                      <th>Crédito</th>
-                      <th>Fecha de Nacimiento</th>
-                      <th>ID</th>
-                      <th>Dirección</th>
-                      <th>Número</th>
-                      <th>Complemento</th>
+                      <th>Cupo</th>
                   </thead>
                   <tfoot>
                     <tr>
-                        <th>Código</th>
-                        <th>Nombre</th>
-                        <th>Deuda</th>
-                        <th>Crédito</th>
-                        <th>Fecha de Nacimiento</th>
-                        <th>ID</th>
-                        <th>Dirección</th>
-                        <th>Número</th>
-                        <th>Complemento</th>
+                      <th>Código</th>
+                      <th>Ruc</th>
+                      <th>Nombre Fiscal</th>
+                      <th>Direccion</th>
+                      <th>Telefono</th>
+                      <th>Tarifa</th>
+                      <th>Deuda</th>
+                      <th>Cupo</th>
                     </tr>
                   </tfoot>
                   <tbody>
                     <tr>
-                        <td>2</td>
-                        <td>Christian</td>
-                        <td>$0.00</td>
                         <td> </td>
-                        <td>23/09/2001</td>
                         <td> </td>
-                        <td>COCA</td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
                         <td> </td>
                         <td> </td>
                     </tr>
@@ -345,6 +369,52 @@
             </div>
         </div>
         <!-- END TABLE -->
+
+        <div class="form-row">
+
+
+          <div class="col">
+
+          </div>
+
+            
+          <div class="col col-lg-2">
+
+            <div class="my-2"></div>
+            <a href="#" class="btn btn-success btn-icon-split" data-toggle="modal" data-target="#payModal">
+              <span class="icon text-white-50">
+                <i class="fas fa-check"></i>
+              </span>
+              <span class="text">Nuevo</span>
+            </a>
+
+          </div>
+
+          <div class="col col-lg-2">
+
+            <div class="my-2"></div>
+            <a href="#" class="btn btn-secondary btn-icon-split" data-toggle="modal" data-target="#payModal">
+              <span class="icon text-white-50">
+                <i class="fas fa-edit"></i>
+              </span>
+              <span class="text">Editar</span>
+            </a>
+
+          </div>
+
+
+          <div class="col col-lg-2">
+
+            <div class="my-2"></div>
+            <a href="#" class="btn btn-danger btn-icon-split">
+              <span class="icon text-white-50">
+                <i class="fas fa-trash"></i>
+              </span>
+              <span class="text">Eliminar</span>
+            </a>
+
+          </div>
+        </div>
 
 
         </div>
