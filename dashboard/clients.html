@@ -381,7 +381,7 @@
           <div class="col col-lg-2">
 
             <div class="my-2"></div>
-            <a href="#" class="btn btn-success btn-icon-split" data-toggle="modal" data-target="#payModal">
+            <a href="#" class="btn btn-success btn-icon-split" data-toggle="modal" data-target="#createModal">
               <span class="icon text-white-50">
                 <i class="fas fa-check"></i>
               </span>
@@ -462,6 +462,91 @@
       </div>
     </div>
   </div>
+
+        <!-- Create Modal-->
+        <div class="modal fade" id="createModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ModalLabel">Crear cliente</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+    
+              <div class="row">
+                <div class="col-lg-12">
+                <div class="p-5">
+    
+                  <form class="user">
+        
+                  <div class="form-group">
+                    <div class="form-group">
+                      <label for="">Descripcion</label>
+                      <input type="text" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Descripcion">
+                    </div>
+    
+                  </div>
+    
+    
+        
+                  <div class="form-group row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                      <label for="">Codigo de barras</label>
+                    <input type="text" class="form-control form-control-user" id="codEx" placeholder="Código de barras">
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="">Stock Actual</label>
+                    <input type="text" class="form-control form-control-user" id="stock" placeholder="Stock Actual">
+                    </div>
+                  </div>
+    
+                  <div class="form-group row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                      <label for="">Stock Reservado</label>
+                    <input type="text" class="form-control form-control-user" id="stockRes" placeholder="Stock Reservado">
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="">Stock Disponible</label>
+                    <input type="text" class="form-control form-control-user" id="stockDis" placeholder="Stock Disponible">
+                    </div>
+                  </div>
+    
+                  <div class="form-group row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                      <label for="">PVP1</label>
+                    <input type="text" class="form-control form-control-user" id="precio" placeholder="PVP1">
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="">Familia</label>
+                    <input type="text" class="form-control form-control-user" id="categoria" placeholder="Familia">
+                    </div>
+                  </div>
+    
+                  <div class="form-group row">
+    
+                    <div class="col-sm-6">
+                      <label for="">Codigo</label>
+                    <input type="text" class="form-control form-control-user" id="codigo" placeholder="Código">
+                    </div>
+                  </div>
+      
+                  
+                  </form>
+                  <hr>
+        
+    
+                </div>
+                </div>
+              </div>
+              
+              <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                <a class="btn btn-success" href="">Cobrar</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
     <!-- END CLIENTS DASHBOARD -->
 
