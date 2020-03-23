@@ -24,14 +24,17 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav  sidebar sidebar-dark accordion" id="accordionSidebar" >
 
-      <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dash.html">
-        <div class="sidebar-brand-icon">
-          <img src="../assets/images/ACONTPLUS-LOGO.png" alt="logo" height="50px">
-        </div>
-      </a>
+      <div>
+
+        <!-- Sidebar - Brand -->
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dash.html">
+          <div class="sidebar-brand-icon">
+            <img src="../assets/images/ACONTPLUS-LOGO.png" alt="logo" height="50px">
+          </div>
+        </a>
+      </div>
 
       <!-- Divider -->
       <hr class="sidebar-divider my-0">
@@ -40,50 +43,50 @@
       <hr class="sidebar-divider">
 
       <!-- Heading -->
-      <div class="sidebar-heading">
+      <div class="sidebar-heading text-warning">
         Addons
       </div>
 
       <!-- Nav Item - Charts -->
       <li class="nav-item">
-        <a class="nav-link" href="charge.html">
-          <i class="fas fa-wallet"></i>
+        <a class="nav-link text-warning" href="charge.html">
+          <i class="fas fa-wallet text-dark"></i>
             <span>Cuentas por cobrar</span></a>
       </li>
 
       <!-- Nav Item - Charts -->
       <li class="nav-item">
-        <a class="nav-link" href="products.html">
-          <i class="fas fa-cart-arrow-down"></i>
+        <a class="nav-link text-warning" href="products.html">
+          <i class="fas fa-cart-arrow-down text-dark"></i>
             <span>Productos</span></a>
       </li>
 
       <!-- Nav Item - Charts -->
       <li class="nav-item">
-        <a class="nav-link" href="caja.html">
-          <i class="fas fa-cash-register"></i>
+        <a class="nav-link text-warning" href="caja.html">
+          <i class="fas fa-cash-register text-dark"></i>
             <span>Caja</span></a>
       </li>
 
 
       <!-- Nav Item - Charts -->
       <li class="nav-item">
-        <a class="nav-link" href="stats.html">
-          <i class="fas fa-fw fa-chart-area"></i>
+        <a class="nav-link text-warning" href="stats.html">
+          <i class="fas fa-fw fa-chart-area text-dark"></i>
           <span>Estadisticas</span></a>
       </li>
 
       <!-- Nav Item - Tables -->
       <li class="nav-item">
-        <a class="nav-link" href="users.html">
-          <i class="fas fa-fw fa-table"></i>
+        <a class="nav-link text-warning" href="users.html">
+          <i class="fas fa-fw fa-table text-dark"></i>
           <span>Usuarios</span></a>
       </li>
 
       <!-- Nav Item - Tables -->
       <li class="nav-item">
-        <a class="nav-link" href="clients.html">
-          <i class="fas fa-address-card"></i>
+        <a class="nav-link text-warning" href="clients.html">
+          <i class="fas fa-address-card text-dark"></i>
           <span>Clientes</span></a>
       </li>
 
@@ -107,8 +110,25 @@
         <!-- Topbar -->
         <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
+          <div class="container">
+
+            <div class="row">
+
+              <div class="col">
+                
             <!-- Page Heading -->
             <h1 class="h3 mb-0 text-gray-800">Ventas</h1>
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+
+
+
 
           <!-- Sidebar Toggle (Topbar) -->
           <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
@@ -282,6 +302,8 @@
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
+          
+
           <!-- BEGIN TABLE -->
           <div class="card shadow mb-4">
               <div class="card-header py-3">
@@ -291,16 +313,16 @@
                   <div class="row">
                     <div class="col col-lg-3">
                       <a href="#" data-toggle="modal" data-target="#fechaModal">
-                        <h5 class="m-0 font-weight-bold text-primary">Facturas de hoy</h5>
+                        <h5 class="m-0 font-weight-bold text-dark">Facturas de hoy</h5>
                       </a>
                       <h5>Filtro: Ninguno</h5>
                     </div>
                     <div class="col col-lg-3">
                       <!-- Nav Item - Tables -->
-                      <h5 class="m-0 font-weight-bold text-primary" >
+                      <h5 class="m-0 font-weight-bold text-dark" >
                         <a  href="#" data-toggle="modal" data-target="#searchModal">
-                          <i class="fab fa-searchengin"></i>
-                          <span></span>Busqueda Avanzada</span></a>
+                          <i class="fab fa-searchengin text-dark"></i>
+                          <span class="text-dark">Busqueda Avanzada</span></a>
                       </h5>
                     </div>
                     <div class="col col-lg-3">
@@ -309,7 +331,7 @@
 
                           <div class="col">
                             
-                            <h5 class="m-0 font-weight-bold text-primary">
+                            <h5 class="m-0 font-weight-bold text-dark">
                               <label for="exampleFormControlSelect1">Sucursal</label>
                             </h5>
                             <select class="form-control" id="exampleFormControlSelect1">
@@ -326,7 +348,7 @@
 
                         <div class="col">
                           
-                          <h5 class="m-0 font-weight-bold text-primary">
+                          <h5 class="m-0 font-weight-bold text-dark">
                             <label for="exampleFormControlSelect1">Punto Emi</label>
                           </h5>
                           <select class="form-control" id="exampleFormControlSelect1">
