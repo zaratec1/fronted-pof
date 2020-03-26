@@ -23,6 +23,8 @@
     width: 400px;
     padding: 100px;
     margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
   }
   
   section {
@@ -31,3 +33,4 @@
     justify-content: center;
     height: 100%;
   }
+
