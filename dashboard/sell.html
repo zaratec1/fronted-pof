@@ -14,19 +14,16 @@
 
     <!-- NORMAL STYLES -->
     <link rel="stylesheet" href="../assets/styles/util.css">
+    <link rel="stylesheet" href="../assets/styles/sell.css">
 
 </head>
 <body>
 
    <!-- START VENTA GRAFICA-->
 
-        <div class="card shadow mb-4">
      
      
             <!-- BOTONES IZQUIERDA -->
-            <div class="card-header py-3">
-
-              <div class="container">
 
                 <div class="row">
 
@@ -49,8 +46,6 @@
                     <a  href="#" data-toggle="modal" data-target="#searchModal">
                       <button type="button" class="btn btn-primary">
                       <i class="far fa-window-close"></i>
-                      <br>
-                      <br>
                       Cancelar
                       </button></a>
                   </h5>
@@ -66,85 +61,96 @@
                   </h5>
                 </div>
 
+                <div class="col col-lg-1"></div>
 
-                <div class="col col-lg-3">
-                  <form class="form-inline">
-                    <div class="form-group">
-                      <label for="inputPassword6">Cliente: </label>
-                      <input type="text" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
-                        
+                <ul class="list-group">
+                  
+                  <li class="list-group-item">
+                    <div class="col col-lg-3">
+                      <form class="form-inline">
+                        <div class="form-group">
+                          <label for="inputPassword6">Cliente: </label>
+                          <input type="text" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+                        </div>
+                      </form>
                     </div>
-                  </form>
-              </div>
-              <div class="col col-lg-3">
-                <form class="form-inline">
-                  <div class="form-group">
-                    <label for="inputPassword6">Cliente: </label>
-                    <input type="text" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
-                      
-                  </div>
-                </form>
-            </div>
-                
+                  </li>
 
+                  <li class="list-group-item">
+                    <div class="col col-lg-3">
+                      <form class="form-inline">
+                        <div class="form-group">
+                          <label for="inputPassword6"> ‏‏‎  ‏‏‎ Tarifa: </label>
+                          <input type="text" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+                        </div>
+                      </form>
+                    </div>
+                  </li>
+
+                  <li class="list-group-item">  
+                    <div class="col col-lg-3">
+                      <form class="form-inline">
+                        <div class="form-group">
+                          <label for="inputPassword6">Buscar: </label>
+                          <input type="text" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+                        </div>
+                      </form>
+                    </div>
+                  </li>
+
+                </ul>
+                
+                <div class="scrolling-box">
+                  <section id="1">This is the first section</section>
+                  <section id="2">This is the second section</section>
+                  <section id="3">This is the third section</section>
                 </div>
 
-              </div>
-              
-              
-              
-            </div>
-            
-
+                </div>
+                
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
-                      <th>Sucursal</th>
-                      <th>Punto de Emisión</th>
-                      <th>Tipo</th>
-                      <th>Número</th>
-                      <th>Fecha</th>
-                      <th>Cliente</th>
-                      <th>Credito/Contado</th>
-                      <th>Total Final</th>
-                      <th>Estado</th>
-                      <th>Estado SRI</th>
+                      <th>LINEA</th>
+                      <th>ARTICULO</th>
+                      <th>CANTIDAD</th>
+                      <th>PRECIO</th>
+                      <th>PRECIOTOTAL</th>
+                      <th>BODEGA</th>
                     </tr>
                   </thead>
                   <tfoot>
                     <tr>
-                      <th>Sucursal</th>
-                      <th>Punto de Emisión</th>
-                      <th>Tipo</th>
-                      <th>Número</th>
-                      <th>Fecha</th>
-                      <th>Cliente</th>
-                      <th>Credito/Contado</th>
-                      <th>Total Final</th>
-                      <th>Estado</th>
-                      <th>Estado SRI</th>
+                      <th>LINEA</th>
+                      <th>ARTICULO</th>
+                      <th>CANTIDAD</th>
+                      <th>PRECIO</th>
+                      <th>PRECIOTOTAL</th>
+                      <th>BODEGA</th>
                     </tr>
                   </tfoot>
                   <tbody>
                     <tr>
-                      <td>Matriz</td>
-                      <td>001-001</td>
-                      <td>FV</td>
-                      <td>000000010</td>
-                      <td>10/12/2020 04:05-PM</td>
-                      <td>Christian Ivan Zarate</td>
-                      <td>30 Días contado</td>
-                      <td>$500</td>
-                      <td>Pendiente</td>
-                      <td>Autorizada</td>
+                      <td>1</td>
+                      <td>COCA COLA</td>
+                      <td>
+                        <input class="input-value" type="text" name="" id="" value="1.0">
+                      </td>
+                      <td>
+                        <input class="input-value" type="text" name="" id="" value="0.7972">
+                      </td>
+                      <td>
+                        <input class="input-value" type="text" name="" id="" value="0.7972">
+                      </td>
+                      <td>MATRIZ</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </div>
-        </div>
+
 
     <!--END VENTA GRAFICA-->
     

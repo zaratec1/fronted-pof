@@ -1,0 +1,33 @@
+.row {
+    margin: 10px;
+}
+
+.card-body{
+    padding-right: 580px;
+}
+
+.input-value {
+    border: transparent;
+    width: 100px;
+}
+
+  
+  .scrolling-box {
+    z-index: 100;
+    display: flexbox;
+    background-color: #eaeaea;
+    height: 500px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    text-align: center;
+    width: 400px;
+    padding: 100px;
+    margin-left: auto;
+  }
+  
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
