@@ -16,12 +16,11 @@
     z-index: 100;
     display: flexbox;
     background-color: #eaeaea;
-    height: 500px;
+    height: 550px;
     overflow-y: scroll;
     scroll-behavior: smooth;
     text-align: center;
-    width: 400px;
-    padding: 100px;
+    width: 120px;
     margin-left: auto;
     margin-top: auto;
     margin-bottom: auto;
@@ -34,3 +33,42 @@
     height: 100%;
   }
 
+.caja {
+    left: 1245px;
+    margin: auto;
+    top: 0px;
+}
+
+.row-div{
+    display: inline;
+    margin: 10px;
+    padding: 50px;
+}
+
+.caja-2 {
+    left: 810px;
+    margin: auto;
+    top: 0px;
+}
+
+.scrolling-box-2 {
+    z-index: 100;
+    display: flexbox;
+    background-color: #eaeaea;
+    height: 550px;
+    scroll-behavior: smooth;
+    text-align: center;
+    width: 430px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.caja-footer {
+    bottom: 0px;
+}
+
+.caja-footer-2 {
+    bottom: 0px;
+    left: 740px;
+}
